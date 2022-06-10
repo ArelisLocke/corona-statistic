@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Corona-Zahlen</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+  </head>
+  <body>
+    <div class="covid-container">
+      <h1 class="covid-header">Corona Statistik</h1>
+      <h1 class="covid-header">Deutschland</h1>
+
+      <div class="form-container">
+        <ul>
+          <li>
+            Datum:
+            <input id="selectDate" type="date" />
+          </li>
+          <li>
+            Land:
+            <select id="selectState">
+              <option>Deutschland</option>
+              <option>Belgien</option>
+              <option>Niederlande</option>
+              <option>Frankreich</option>
+              <option>England</option>
+            </select>
+          </li>
+          <li>
+            Bundesland:
+            <select name="selectState">
+              <option value="Berlin">Berlin</option>
+              <option value="Bayern">Bayern</option>
+              <option value="Baden-Wurttemberg">Baden-Würthenberg</option>
+              <option value="Bremen">Bremen</option>
+              <option value="Mecklenburg-Vorpommern"
+                >Mecklen-BUrgvorpommern</option
+              >
+              <option value="Niedersachsen">Niedersachsen</option>
+              <option value="Nordrhein-Westfalen">Nordrein-Westfahlen</option>
+              <option value="Rheinland-Pfalz">Reinland-Pfalz</option>
+              <option value="Saarland">Saarland</option>
+              <option value="Sachsen">Sachsen</option>
+              <option value="Sachsen-Anhalt">Sachsen-Anhalt</option>
+              <option value="Schleswig-Holstei">Schleswig-Holsctein</option>
+              <option value="Thuringen">Thüringen</option>
+              <option value="Hamburg">Hamburg</option>
+              <option value="Hessen">Hessen</option>
+              <option value="Brandenburg">Brandenburg</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <div class="btn">
+        <button id="loadStats" class="btn-text">Lade Statisitik</button>
+      </div>
+
+      <div class="stats-container">
+        <table id="stats-table" class="display" width="100%"></table>
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>

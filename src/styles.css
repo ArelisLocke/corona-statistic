@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  background-color: #7ac377;
+}
+
+li {
+  list-style-type: none;
+}
+
+.covid-container {
+  margin: auto;
+  padding: 2em;
+  text-align: center;
+}
+.covid-header {
+  color: green;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.btn-text {
+  text-transform: uppercase;
+  background-color: aqua;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border-style: none;
+}
+/*
+#selectState  {
+  widht
+}
+*/
